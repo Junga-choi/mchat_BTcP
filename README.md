@@ -319,7 +319,9 @@
                 };
             }
 
-            const apiKey = ""; // Canvas will automatically provide this
+            // IMPORTANT: Replace "YOUR_GEMINI_API_KEY" with your actual Gemini API Key
+            // For production, consider more secure ways to manage API keys (e.g., server-side proxy)
+            const apiKey = "YOUR_GEMINI_API_KEY"; 
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
             try {
@@ -440,7 +442,7 @@
                     - "돌발성 암성 통증 환자에게 속효성 진통제가 권고되며, 앱스트랄은 이러한 상황에서 고려될 수 있습니다." (ESMO Clinical Practice Guidelines, 2018 등 공인된 문헌 인용 시)
                     - "앱스트랄의 용법·용량은 개별 환자의 통증 조절에 따라 적정되어야 합니다." (SmPC 기반)
                     <br><br>
-                    **주의할 표현 (High Risk):**
+                    **주의할 표현 (High Risk):
                     - "가장 빠른 효과를 보이는 앱스트랄" (최상급 표현)
                     - "중독 걱정 없는 앱스트랄" (오남용 암시, 안전성 과장)
                     - "의사도 추천하는 앱스트랄" (전문가 보증)
